@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+<title>Juice The Jiraffe</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body style="background-color:darkslategray;">
+
+<h2>My Serverless Website!</h2>
+<p>Hey my name is Jacob and I am an Associate Systems Engineer for a company in Austin. I currently have 5 AWS Certs and I am now going for the CSA-Pro. Wish me luck!</p>
+<p>Here you will find links to my Github repository, youtube channel, Linkedin, and more.</p>
+
+<header>
+  <h2>My links</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="http://juicethejiraffe.com.s3-website.us-east-2.amazonaws.com/Github.html">Github</a></li>
+      <li><a href="http://juicethejiraffe.com.s3-website.us-east-2.amazonaws.com/Youtube.html">Youtube</a></li>
+      <li><a href="https://www.linkedin.com/in/jacob-m-johnson-198718167/">Linkedin</a></li>
+      <li><a href="https://www.instagram.com/juicethegiraffe/?hl=en">Instagram</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>My links</h1>
+    <p>Each link to the left will take you to a separate page hosted in this S3 bucket. There will be links describing more granular pages to help navigation!</p>
+    <p>My Github will contain notes for various certs I have obtained. Right now it only has the Security Specialty, but it will be populated with the CSA-Pro once I get more material.</p>
+    <p>My Youtube will have AWS tutorial videos Some of which will be aimed towards CSA-Associates, and some of which I will create for higher levels.</p>
+    <p>Feel free to reach out to me on Linkedin or Instagram if you have any questions!</p>
+  </article>
+</section>
+
+<footer>
+  <p></p>
+</footer>
+
+</body>
+</html>
