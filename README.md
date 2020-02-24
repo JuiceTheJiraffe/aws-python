@@ -12,3 +12,9 @@ Webotron currently has the following features:
 - List contents of a bucket
 - Create and setup a bucket and it's static website
 - Sync directory tree to bucket
+- Set AWS profile with --profile with --profile=<profileName> 
+
+
+# Extra Challenges
+
+- Delete files from S3 that are not in the path you are uploading
