@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import uuid
-import util
 
 '''Classes for Route 53 domains.'''
 
